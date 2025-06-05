@@ -1,6 +1,353 @@
-h1 {
-  color: #364e96; /*文字色*/
-  padding: 5px 0; /*上下の余白*/
-  border-top: solid 6px #364e96; /*上線*/
-  border-bottom: solid 6px #364e96; /*下線*/
+@charset "UTF-8";
+
+body {
+  width: 100%;
+  height: auto;
+  background-image:url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/fill-rectangle.svg") ;
+  background: no-repeat;
+}
+
+
+.header-logo img {
+  width: 180px;
+  margin:10px;
+}
+
+@media (max-width:767px){
+  .header-logo img{
+    width: 190px;
+    height:auto;
+    align-self: center;
+  }
+}
+
+.header-logo {
+  float:left;
+  padding-right: 300px;
+  padding-left:10px;
+}
+
+span{
+  display: block;
+}
+
+@media (max-width: 767px){
+  span{
+    display: none;
+  }
+
+}
+
+
+.header-list{
+  display: flex;
+  text-align: center;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 767px){
+  .header-list{
+    display:none;
+  }
+}
+
+.header-list a{
+  color: black;
+  font-weight: bold;
+}
+
+@media(max-width: 767px){
+  .header-list a{
+    display: none;
+  }
+}
+
+.header-list a:hover{
+  color: #50585e;
+}
+
+@media (max-width: 767px){
+  .header-list s:hover{
+    display: none;
+  }
+}
+
+
+.navi{
+  padding: 10px 55px;
+}
+
+.interview{
+  padding: 10px 20px;
+}
+
+.faq{
+  padding: 10px 20px;
+}
+
+.recruit{
+  padding: 10px 25px
+}
+
+.u{
+  padding: 10px 20px;
+}
+
+
+.counseling a{
+  background-color: rgba(252, 151, 0, 1);
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 30px;
+  float: right;
+  position: relative;
+  bottom: 50px;
+}
+
+@media (max-width: 767px){
+  .counseling a{
+    display: none;
+  }
+}
+
+.counseling a:hover{
+  background-color: rgb(252, 151, 0,0.8);
+  color:white ;
+}
+
+@media(max-width: 767px){
+  .counseling a:hover{
+    display: none;
+  }
+}
+
+.counseling-b a{
+  background-color: rgb(252, 151, 0);
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  height:auto;
+  width:100;
+  position: relative;
+  bottom: 1830px;
+  left: 100px;
+  padding: 20px 130px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+@media(max-width: 767px){
+  .counseling-b a{
+    display: block;
+    width: 80%;
+    height: auto;
+    color: white;
+    background-color: rgb(252, 151, 0);
+    position: relative;
+    bottom: 630px;
+    left:10px;
+    font-size: 15px;
+    padding: 20px 20px;
+    text-align: center;
+  }
+}
+
+.counseling-b a:hover{
+  background-color: rgb(252, 151, 0,0.8);
+  color:white ;
+}
+
+@media(max-width: 767px){
+  .counseling-b a:hover{
+    display: none;
+  }
+}
+ 
+a{
+  text-decoration: none;
+}
+
+.enn{
+  position: relative;
+  top: 80px;
+  right: 30px;
+}
+
+@media(max-width:767px){
+  .enn{
+    position: relative;
+    top: 10px;
+    right: -30px;
+  }
+}
+
+.circle {
+  width: 530px;
+  height: auto;
+}
+
+@media(max-width: 767px){
+  .circle{
+    width: 220px;
+    height: auto;
+  }
+}
+
+.main-visual{
+  height: auto;
+  width:770px ;
+  position: relative;
+  left: 500px;
+  bottom: 535px;
+}
+
+@media(max-width:767px){
+  .main-visual{
+    width: 330px;
+    height: auto;
+    position: relative;
+    left: 100px;
+    bottom: 250px;
+  }
+}
+
+.main-visual img{
+  height: auto;
+  width: 550px;
+}
+
+.triangle {
+  position: relative;
+  bottom: 1172px;
+  right: 10px;
+  width: 100%;
+  height: auto;
+}
+@media(max-width: 767px){
+  .triangle{
+    position: relative;
+    width: 100%;
+    height: auto;
+    bottom: 520px;
+  }
+}
+
+.uesannkaku{
+  width: 20%;
+  height: auto;
+}
+
+@media(max-width: 767px){
+  .uesannkaku{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+  }
+}
+
+
+.sita-triangle{
+  position: relative;
+  bottom: 1100px;
+  left: 950px;
+  width: 100%;
+  height: auto;
+}
+
+.sitasannkaku {
+  width: 25%;
+  height: auto;
+}
+ 
+.content{
+  position: relative;
+  bottom: 1650px;
+  left: 100px;
+  width: 500px;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+@media(max-width: 767px){
+  .content{
+    position: relative;
+    bottom: 510px;
+    left: 10px;
+    font-size: 15px;
+
+  }
+}
+
+.no{
+  position: relative;
+  width:90% ;
+  height: auto;
+  bottom: 2000px;
+  left: 550px;
+}
+@media(max-width: 767px){
+  .no{
+    position: relative;
+    width: 90%;
+    height: auto;
+    bottom:650px;
+    left: 250px;
+  }
+
+  .no1{
+    width: 30%;
+  }
+}
+
+.attention{
+  width: 700px;
+  position: relative;
+  bottom: 1800px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  padding-left: 10px;
+  font-weight: lighter;
+}
+
+@media(max-width: 767px){
+  .attention{
+    width: 390px;
+    height: auto;
+    position: relative;
+    bottom: 620px;
+    line-height: 1.5;
+    text-align: center;
+    padding-left: 10px;
+    right: 10px;
+  }
+}
+
+@media(max-width:767px){
+  .humburgar-menu{
+    align-items: center;
+    appearance: none;
+    border: none;
+    display: flex;
+    width: 20px;
+    height: 40px;
+    position: relative;
+    left: 340px;
+    bottom: 35px;
+    gap:5px;
+    flex-direction: column;
+  }
+
+  .humburgar-line {
+    width: 20px;
+    height: 1px;
+    background-color: #50585e;
+    display: block;
+  }
+
+
 }
